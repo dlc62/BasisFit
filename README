@@ -1,0 +1,14 @@
+Usage:
+
+process_datfile.py GAMESS.DAT large_basis_name
+
+where GAMESS.DAT = DAT file produced by GAMESS containing name of initial (small) basis set and MO coefficients in this basis set
+
+Calls:
+
+- basis.py to load up basis set details
+- fit.py to reconstruct minimal basis atomic orbitals using basis functions from a larger basis set. 
+
+Result: 
+
+Small basis MOs expanded into / reconstructed using functions from larger basis set
