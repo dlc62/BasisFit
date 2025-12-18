@@ -1,0 +1,7 @@
+To support new basis sets, a few simple steps are required:
+- download basis set data from the EMSL basis set library
+  (save as basisname.Gamess in basis set directory)
+- make sure that each basis set specification is followed by
+  a blank line (insert blank line after last basis set in file,
+  before $END)
+- add new basis name to basis_list in process_dat.py

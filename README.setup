@@ -1,0 +1,21 @@
+To install these scripts, you will need:
+- a copy of the python scripts
+    process_datfile.py
+    fit.py
+    basis.py
+- a directory containing basis sets in Gamess format
+    Note that the file names must end with .Gamess
+    and each basis set in the file must be followed by
+    a blank line
+
+You will also need to edit line 13 of basis.py to 
+reference the appropriate location for your Gamess 
+basis set library directory. It is possible to change
+the required file extension by editing this line 
+if you so wish. If you are installing on a Mac under OSX
+you may instead run the install.osx script.  
+
+To make these scripts globally executable, add the 
+directory in which they are stored to your path.
+For Mac OSX users, edit /etc/paths and restart x11/terminal
+For linux users, edit your .profile or .cshrc and source these files

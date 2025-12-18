@@ -1,0 +1,32 @@
+New in version 1.01
+- orbital numbering changed to modulo 100
+- allows user to specify name of small basis set rather 
+  than extracting it from the dat file (required when 
+  using externally defined basis sets)
+- allows fits to two sets of potentially different UHF orbitals
+- includes data for 6-31G* basis 
+New in version 1.02
+- error handling if atomic data missing from basis data file
+- ability to specify small basis and just extract coordinate
+  data from dat file (required if EXTFIL=.TRUE. in GAMESS)
+- bug fix - correct angular momentum in fit.py for f functions
+- extension of recognised atoms up to Mn
+New in version 1.03
+- enables use of 'minimal' basis sets with g-functions (not
+  really minimal at all!)
+- extension of recognized atoms up to Xe
+- expansion of basis set list, and update of data file
+- error handling if number of expected MO coefficients from 
+  atomic coordinates + basis set data != actual number of 
+  MO coefficients
+- ability to extract MCSCF optimized orbitals as well as RHF/UHF
+- ability to extract atomic identities and ordering from 
+  population analysis section of dat file (for sensible atomic naming)
+New in version 1.04
+- resolved path to BasisFit and replacement in basis.py now works
+  in install script
+- basis set input is now case and format insensitive,
+  basis data file names have been altered accordingly
+- can now specify relative path to .dat file
+- updated basis set data files to remove h & i functions (and some g
+  functions) from large basis sets

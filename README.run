@@ -1,0 +1,3 @@
+To execute these scripts:
+process_datfile.py dat_file_name target_large_basis_name (small_basis_name - optional, will be detected from datfile anyway if your molecule is specified in C1 symmetry)
+

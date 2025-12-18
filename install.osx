@@ -1,0 +1,7 @@
+pushd `dirname $0` > /dev/null
+BASISPATH=`pwd`
+popd > /dev/null
+REPLACEPATH=$(echo $BASISPATH | sed -e 's/\//\\\//g')
+echo $REPLACEPATH 
+perl -pi -e "s/BasisFitPath/$REPLACEPATH/g" basis.py
+echo '$BASISPATH' > /etc/paths 
